@@ -8,7 +8,8 @@ package calsum;
  *
  * @author ADMIN
  */
-public class ArrayUtils {
+public class ArrayUtils {\
+    // viet vao netbeans
     public static int calSum(int[] arr) {
         int sum = 0;
         for (int num : arr) {
