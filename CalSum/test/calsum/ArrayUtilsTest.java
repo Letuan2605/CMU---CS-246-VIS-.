@@ -17,8 +17,9 @@ import static org.junit.Assert.*;
  */
 public class ArrayUtilsTest {
     @Test
-   public void testCalSum() {
-        assertEquals(10, MyFunctions.calSum(new int[]{1, 2, 3, 4}));
-        assertEquals(0, MyFunctions.calSum(new int[]{}));
+    public void testCalSum() {
+        assertEquals(10, ArrayUtils.calSum(new int[]{1, 2, 3, 4}));
+        assertEquals(0, ArrayUtils.calSum(new int[]{}));
+        assertEquals(-6, ArrayUtils.calSum(new int[]{-1, -2, -3}));
     }
 }
