@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
-package calsum;
+package TimSoLonNhat;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -15,10 +15,12 @@ import static org.junit.Assert.*;
  *
  * @author ADMIN
  */
-public class ArrayUtilsTest {
+public class SoLonNhatTest {
+    
     @Test
-   public void testCalSum() {
-        assertEquals(10, MyFunctions.calSum(new int[]{1, 2, 3, 4}));
-        assertEquals(0, MyFunctions.calSum(new int[]{}));
+    public void testFindMaxNum() {
+        assertEquals(9, SoLonNhat.findMaxNum(new int[]{1, 5, 9, 2}));
+        assertEquals(-1, SoLonNhat.findMaxNum(new int[]{-5, -1, -9}));
     }
+    
 }

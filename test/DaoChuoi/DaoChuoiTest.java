@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
-package calsum;
+package DaoChuoi;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -15,10 +15,12 @@ import static org.junit.Assert.*;
  *
  * @author ADMIN
  */
-public class ArrayUtilsTest {
+public class DaoChuoiTest {
+    
     @Test
-   public void testCalSum() {
-        assertEquals(10, MyFunctions.calSum(new int[]{1, 2, 3, 4}));
-        assertEquals(0, MyFunctions.calSum(new int[]{}));
+    public void testReverseString() {
+        assertEquals("cba", DaoChuoi.reverseString("abc"));
+        assertEquals("", DaoChuoi.reverseString(""));
     }
+    
 }
